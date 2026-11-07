@@ -22,7 +22,7 @@
   --sel-bg: #0b1a3d; --sel-fg: #eef1f8;
   --c1: #2a5fc9; --c2: #1baf7a; --c3: #c98a12; --c4: #d55181;
 
-  --f-display: "El Messiri", "Noto Naskh Arabic", "Times New Roman", serif;
+  --f-display: "Bodoni Moda", "El Messiri", "Noto Naskh Arabic", Georgia, serif;
   --f-body: "Readex Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", sans-serif;
 
   --s-xs: .8125rem; --s-sm: .9375rem; --s-md: 1.0625rem; --s-lg: 1.3125rem;

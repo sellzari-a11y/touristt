@@ -124,7 +124,7 @@ ${keywords ? `<meta name="keywords" content="${esc(keywords)}">` : ""}
 <link rel="icon" href="${r}assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=Readex+Pro:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&family=El+Messiri:wght@500;600;700&family=Readex+Pro:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="${r}assets/style.css">
 <script>try{var l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("tt-lang");if(l==="en"){document.documentElement.lang="en";document.documentElement.dir="ltr"}}catch(e){}</script>
 ${[org, ...jsonld].map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</script>`).join("\n")}
