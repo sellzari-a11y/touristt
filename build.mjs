@@ -219,7 +219,7 @@ function finder(r, { limit = 0 } = {}) {
         <select id="f-field" name="field"><option value="" data-ar="كل التخصصات" data-en="All fields">كل التخصصات</option>${opt(FIELDS)}</select></label>
       <label class="fld"><span class="lbl">${T("المدينة", "City")}</span>
         <select id="f-city" name="city"><option value="" data-ar="كل المدن" data-en="All cities">كل المدن</option>${opt(CITIES)}</select></label>
-      <label class="fld"><span class="lbl">${T("نوع الجامعة", "University type")}</span>
+      <label class="fld fld-type"><span class="lbl">${T("نوع الجامعة", "University type")}</span>
         <select id="f-type" name="type"><option value="" data-ar="الكل" data-en="All">الكل</option>${opt(TYPES)}</select></label>
       <fieldset class="fld seg-fld"><legend class="lbl">${T("لغة الدراسة", "Language of study")}</legend>
         <div class="seg">
@@ -229,7 +229,8 @@ function finder(r, { limit = 0 } = {}) {
         </div>
       </fieldset>
       <label class="fld fld-wide"><span class="lbl">${T("أقصى رسوم سنوية", "Max yearly tuition")} <output class="num" data-budget-out>RM 60,000</output></span>
-        <input id="f-budget" type="range" name="budget" min="12000" max="60000" step="1000" value="60000"></label>
+        <input id="f-budget" type="range" name="budget" min="12000" max="60000" step="1000" value="60000">
+        <span class="range-ends num" aria-hidden="true"><span>RM 12,000 · ${T("الأقل", "min")}</span><span>${T("الأعلى", "max")} · RM 60,000</span></span></label>
     </form>
     <p class="count" data-count aria-live="polite"></p>
     <div class="uni-grid" data-results></div>
@@ -350,7 +351,7 @@ function home() {
       <a class="btn btn-wa btn-lg" ${wa("السلام عليكم، أحلم بالدراسة في ماليزيا وأريد استشارة", "Hello, I want to study in Malaysia and would like advice")}>${icon("wa")}${T("تواصل عبر واتساب", "Chat on WhatsApp")}</a>
     </div>
     <ul class="hero-facts">
-      <li><b class="num">+20</b>${T("جامعة ومعهد شريك", "partner universities and institutes")}</li>
+      <li><b class="num"><bdi>20<span class="plus">+</span></bdi></b>${T("جامعة ومعهد شريك", "partner universities and institutes")}</li>
       <li><b>${T("6 خدمات", "6 services")}</b>${T("من التقديم حتى التخرج", "from application to graduation")}</li>
       <li><b class="num">29K</b>${T("مشاهدة لمقاطعنا على تيك توك", "views on our TikTok videos")}</li>
     </ul>
